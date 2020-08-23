@@ -56,8 +56,6 @@ En este desafío vamos a usar las siguientes herramientas
 
 Mira el tutorial a continuación para aprender como aplicar la tecnología de IBM para resolver el desafío
 
-<<< Pronto compartiremos el vídeo tutorial aqui y en discord >>>
-
 <div align="center">
     <a href="https://youtu.be/g_7piTH9_Ak">
        <img width="50%" src="./doc/source/images/TUTORIAL-DESAFIO-4-ES.png" alt='video'>
