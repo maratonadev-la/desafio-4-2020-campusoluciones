@@ -58,11 +58,11 @@ Mira el tutorial a continuación para aprender como aplicar la tecnología de IB
 
 <<< Pronto compartiremos el vídeo tutorial aqui y en discord >>>
 
-<!--<div align="center">
-    <a href="https://youtu.be/8uc_EYhLXfA">
+<div align="center">
+    <a href="https://youtu.be/g_7piTH9_Ak">
        <img width="50%" src="./doc/source/images/TUTORIAL-DESAFIO-4-ES.png" alt='video'>
     </a>
-</div>-->
+</div>
 
 ### 4.1. Pre-requisitos
 
