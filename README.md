@@ -101,6 +101,7 @@ Si cambia el nombre del notebook su solución no será evaluada
 
 Después de realizar las pruebas, haz clic en el botón en la esquina inferior derecha para ENVIAR TU SOLUCIÓN, como se muestra en la imagen a continuación, y completa el formulario con su dirección de correo electrónico con la que te registraste en MARATÓN 2020.
 
+<img align='center' src="./doc/source/images/COMPU_SEND.png" alt="submision"></img>
 
 ## 6. Sobre la evaluación
 
