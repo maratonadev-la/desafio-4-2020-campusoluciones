@@ -42,7 +42,7 @@ Esto  ayudará  a CompuSoluciones a mejorar  la  eficiencia  en  su  proceso  ac
 
 CompuSoluciones tiene una enorme cantidad de registro financieros de sus asociados y con la ayuda de herramientas de ciencia de datos es posible crear un modelo de Machine Learning que ayude a clasificar el comportamiento crediticio
 
-En este desafío, CompuSoluciones usará herramientas de IBM como *[Watson Studio (o Cloud Pack for Data)](https://cloud.ibm.com/catalog/services/watson-studio)* y *[Watson Machine Learning](https://cloud.ibm.com/catalog/services/machine-learning)* para construir un modelo de Machine Learning natural capaz de predecir la probabilidad de cumplimiento de pago.
+En este desafío, CompuSoluciones usará herramientas de IBM como *[Watson Studio (o Cloud Pack for Data)](https://cloud.ibm.com/catalog/services/watson-studio)*  para construir un modelo de Machine Learning natural capaz de predecir la probabilidad de cumplimiento de pago.
 
 La idea esencial del Desafío 4 es crear un modelo basado en machine learning capaz de identificar el comportamiento financiero del asociado de negocio, permitiendo una probabilidad de cumplimiento o incumplimiento del crédito.
 
@@ -52,9 +52,13 @@ En este desafío vamos a usar las siguientes herramientas
 
 *[Watson Studio](https://cloud.ibm.com/catalog/services/watson-studio)* proporciona un conjunto de herramientas y un entorno colaborativo para científicos de datos, desarrolladores y expertos en dominios. Es un ambiente de desarrollo (IDE) web que combina herramientas Open Source con tecnología de IBM para desarrollar modelos de Machine Learning y Deep Learning.
 
-*[Watson Machine Learning](https://cloud.ibm.com/catalog/services/natural-language-understanding)* es un servicio completo de IBM Cloud que facilita a los desarrolladores y científicos de datos trabajar para integrar capacidades predictivas con sus aplicaciones. El servicio Machine Learning es un conjunto de API REST que puede llamar desde cualquier lenguaje de programación para desarrollar aplicaciones que tomen decisiones más inteligentes, resuelvan problemas difíciles y mejoren los resultados del usuario.
-
 Mira el tutorial a continuación para aprender como aplicar la tecnología de IBM para resolver el desafío
+
+**¡ATENCIÓN!** UPDATE EN EL PROCESO DE ENTREGA
+
+Vea el video https://youtu.be/K2qOrWPSwQM con las nuevas instruciones (solo para envíos realizados después del 3 Septiembre)
+
+NOTA: A continuación se muestra el video tutorial, que aún puede ser útil. También demuestra la integración del modelo creado con Watson Machine Learning. Después del 2 de septiembre de 2020, Watson Machine Learning se ha actualizado y este paso ya no es necesario para enviar el desafío.
 
 <div align="center">
     <a href="https://youtu.be/g_7piTH9_Ak">
@@ -72,38 +76,35 @@ Para poder realizar este desafío, se deben cumplir con los siguientes requisito
 ### 4.2. Resumen de las tareas
 
 1. Cree el servicio [Watson Studio (Cloud Pak for Data as a Service)](https://cloud.ibm.com/catalog/services/watson-studio)  en IBM Cloud. (Si ya lo creo en el desafío 2 no es necesario volverlo a crear)
-2. Cree el servicio [Watson Machine Learning](https://cloud.ibm.com/catalog/services/natural-language-understanding). (Si ya lo creo en el desafío 2 no es necesario volverlo a crear)
-3. Cree el servicio [Cloud Object Storage](https://cloud.ibm.com/catalog/services/cloud-object-storage) (Si ya lo creo en el desafío 2 no es necesario volverlo a crear)
-4. [Crear un nuevo proyecto vacío en Watson Studio](https://dataplatform.cloud.ibm.com/projects/new-project?context=cpdaas).
-5. Importar el notebook usando el archivo `compusoluciones.ipynb`
-6. Leer y ejecutar las instrucciones contenidas en el Notebook `compusoluciones.ipynb`.
-7. Guarde las credenciales del servicio Watson Machine Learning (WML)
-8. Guarde la URL o Endpoint de su modelo entrenado (Ver Notebook)
-9. Envíe su solicitud a [https://compusoluciones.maratona.dev/](https://compusoluciones.maratona.dev/)
+2. Cree el servicio [Cloud Object Storage](https://cloud.ibm.com/catalog/services/cloud-object-storage) (Si ya lo creo en el desafío 2 no es necesario volverlo a crear)
+3. [Crear un nuevo proyecto vacío en Watson Studio](https://dataplatform.cloud.ibm.com/projects/new-project?context=cpdaas).
+4. Importar el notebook usando el archivo `notebook.ipynb`
+5. Leer y ejecutar las instrucciones contenidas en el Notebook `notebook.ipynb`.
+6. Descargar el archivo de resultado `results.csv` y el notebook de trabajo `notebook.ipynb`
+7. Envíe su solicitud a [https://compusoluciones.maratona.dev/](https://compusoluciones.maratona.dev/)
 
 ### 4.3. Desarrollo
 
-La idea esencial del Desafío 4 es crear un modelo basado en machine learning capaz de identificar el comportamiento financiero del asociado de negocio, permitiendo una probabilidad de cumplimiento o incumplimiento del crédito. El participante trabajará con un conjunto de datos sintéticos proporcionados y creará una "pipeline", es decir, una cadena de pasos de pre-procesamiento y un modelo de clasificación.
+La idea esencial del Desafío 4 es crear un modelo basado en machine learning capaz de identificar el comportamiento financiero del asociado de negocio, permitiendo una probabilidad de cumplimiento o incumplimiento del crédito. 
 
-En este rencuentra el notebook necesario para crear proyecto completo en Watson Studio ya con una solución básica lista, totalmente funcional. Puede (y se recomienda) mejorar el modelo para obtener una mayor puntuación :)
+En este rencuentra el notebook `notebook.ipynb` necesario para crear proyecto completo en Watson Studio ya con una solución básica lista, totalmente funcional. Puede (y se recomienda) mejorar el modelo para obtener una mayor puntuación :)
 
 ## 5. Envío
 
-Para hacer la entrega, debes acceder a la siguiente página: [https://compusoluciones.maratona.dev/](https://compusoluciones.maratona.dev/) y llenar el formulario con las credenciales de su instancia de Watson Machine Learning y la URL del modelo para la calificación. 
+Para hacer la entrega, debes acceder a la siguiente página: [https://compusoluciones.maratona.dev/](https://compusoluciones.maratona.dev/) y cargar un archivo zip con el archivo csv `results.csv` con los resultados de su predicción y el notebook que desarrolló `notebook.ipynb`.
+
+Si cambia el nombre o formato del archivo csv su solución no será evaluada
+
+Si cambia el nombre del notebook su solución no será evaluada
 
 🚨 **PRUEBE SU SOLUCIÓN ANTES DE PRESENTARLA** 🚨
 
-Después de ingresar sus credenciales haga clic en el botón en la esquina inferior derecha para ENVIAR su solución, como se muestra en la imagen a continuación, y complete el formulario con su dirección de correo electrónico utilizada para la inscripción en MARATÓN 2020.
-
-Credenciales:
-<img align='center' src="./doc/source/images/CS_CREDENTIALS.png" alt="submissão"></img>
-Enviar:
-<img align='center' src="./doc/source/images/CS_SEND.png" alt="submissão"></img>
+Después de realizar las pruebas, haz clic en el botón en la esquina inferior derecha para ENVIAR TU SOLUCIÓN, como se muestra en la imagen a continuación, y completa el formulario con su dirección de correo electrónico con la que te registraste en MARATÓN 2020.
 
 
 ## 6. Sobre la evaluación
 
-En esencia, el reto puntuará la calidad de su modelo, sin embargo debe estar alojado en Watson Machine Learning, y no sólo contenido en forma de código del notebooks proporcionado. En esta ocación se hara una prueba basada en el _F1 Score_, que mide tanto la presición como el recall. No se desea clasificar como incumplimiento aquellos prestamos que en verdad serian buenos, por lo que el dataset de pruebas estará balanceado. Como se explica en el vídeo tutorial, el problema que debe resolver el modelo de machine learning es un problema clásico de clasificación binaria, y se encuentran más detalles en el notebook jupyter proporcionado.
+En esencia, el reto puntuará la calidad de su resultado en el archivo csv. En esta ocación se hara una prueba basada en el _F1 Score_, que mide tanto la presición como el recall. No se desea clasificar como incumplimiento aquellos prestamos que en verdad serian buenos, por lo que el dataset de pruebas estará balanceado. Como se explica en el vídeo tutorial, el problema que debe resolver el modelo de machine learning es un problema clásico de clasificación binaria, y se encuentran más detalles en el notebook jupyter proporcionado.
 
 La rapidez de entrega no se incluye en el cálculo de la puntuación del desafío. Sin embargo, para todos los participantes que presenten este desafío en la primera semana después del lanzamiento, recibirán una bonificación en la puntuación final.
 
@@ -114,7 +115,6 @@ Recuerde que tiene 3 oportunidades de envío de la solución del reto donde se l
 - [Video Watson Studio](https://www.youtube.com/watch?v=BecC1U5PJT4)
 - [Una guía del portal de IBM Developer para principiantes del Machine Learning](https://developer.ibm.com/es/patterns/use-icp4d-to-build-the-machine-learning-model-for-return-propensity/)
 - [Watson Studio Docs](https://dataplatform.cloud.ibm.com/docs/content/?context=cpdaas)
-- [Watson Machine Learning Docs](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/ml-overview.html)
 
 ## Solución de problemas
 
